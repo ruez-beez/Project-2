@@ -1,0 +1,184 @@
+.glass-antiqua-regular {
+  font-family: "Glass Antiqua", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body{
+    background-color: #F1F2EC;
+    margin: 0;
+    display: flex;
+}
+
+#container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto, 2fr;
+    /* align-items: start; */
+}
+
+main{
+    /* max-width: 1200px; */
+    padding: 0.5rem 6vw 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-column-start: 3;
+    grid-column-end: 4;  
+}
+header{
+    margin: 1em;
+    padding:1em;
+}
+
+
+#dropdown{
+    max-width: 400px;
+    height:100% ;
+    background-color:#92A050 ;
+}
+nav{
+    padding-right: 3em;
+    position: sticky;
+    top: 2rem;
+    
+
+}
+.navbutton{
+    display: none;
+}
+nav a{
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+    color:#DFE2CF;
+    display: block;
+    padding: 1em;
+    margin: 1em;
+    font-weight: 600;
+    border-style: solid;
+    border-color: #DFE2CF;
+    border-left: none;
+    border-right: none;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #DFE2CF;
+    background-color: #6C7544;
+    font-weight: 600;
+}
+.navlinks{
+    list-style:none;
+}
+
+h1, #name{
+    font-family: "Glass Antiqua", cursive;
+    font-size: 3rem;
+    font-size: clamp(3rem, 2.9rem + 0.5vw, 3.5rem);
+    font-weight: 1000;
+    color: #211010;
+}
+h2{
+    font-family: "Glass Antiqua", cursive;
+    font-size: 2rem;
+    font-size: clamp(2rem, 1.9rem + 0.5vw, 2.5rem);
+    color: #BD4747;
+     border-bottom-style: dotted;
+    border-bottom-color: #BD4747;
+    border-bottom-width: 8px;
+    padding-bottom: 25px;
+
+}
+ul{
+    font-family: "Nunito Sans", sans-serif;
+    
+}
+
+a:hover{
+    color: #BD4747;
+    font-weight: 800;
+}
+
+#name:hover{
+    color: #BD4747;
+}
+p,ul,a,ol{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 0.8rem;
+    font-size: clamp(0.8rem, 0.7100000000000001rem + 0.44999999999999996vw, 1.25rem);
+    color: #211010;
+}
+.steps{
+    line-height: 2em;
+}
+
+#rating{
+    max-width: 10em;
+}
+
+
+section{
+  margin: 1em;
+    padding:1em;
+     border-width: 5px;
+    border-style: solid;
+    border-color: #92A050;
+    border-radius: 10px;
+    background-color: #DFE2CF;
+    padding-top: 0px;
+}
+
+
+
+
+@media only screen and (max-width: 800px)
+{
+    
+    main{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navbutton{
+        cursor: pointer;
+        display:block;
+        min-width: 5%;
+        min-height: 5%; 
+        padding: 1em;
+        color: #DFE2CF;
+        background-color: #92A050;
+        border-color: #92A050;
+        border-style: solid;
+        border-width: 2px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        text-align: center;
+        font-weight: 1000;
+    }
+    .navbutton:hover{
+        background-color: #6C7544;
+        border-color: #6C7544;
+    }
+
+    #dropdown a{
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        
+    }
+    nav{
+        display: none;
+        position: absolute;
+        height: 100vh;
+        background-color: #92A050;
+    }
+    #dropdown {
+        display:block;
+        position: fixed;
+        max-height: 1em;
+    }
+    #dropdown:hover nav{
+        display: block;
+        border-top-right-radius: 10px;
+    }
+
+}
